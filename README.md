@@ -9,6 +9,10 @@ This repository implements a deep learning-based method for rigid DSA-CTA regist
 
 The method demonstrates effectiveness and robustness on both simulated and real-world datasets.
 
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
+![GitHub Stars](https://img.shields.io/github/stars/xxsxxsxxs666/2D-3DCoronary?style=social)
 ## TODO List
 ### 1. Inference  
 - [ ] Open-source inference model weights  
