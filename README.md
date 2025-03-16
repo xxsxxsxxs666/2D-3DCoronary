@@ -26,3 +26,5 @@ The method demonstrates effectiveness and robustness on both simulated and real-
 - [ ] Write usage documentation for the simulation module  
 ### 4. Training  
 - [ ] Open-source training code  
+
+> **News**: Our paper **"Vascular-topology-aware Deep Structure Matching for 2D DSA and 3D CTA Rigid Registration"** has been accepted to the **2025 International Conference on Information Processing in Medical Imaging (IPMI)**! 
