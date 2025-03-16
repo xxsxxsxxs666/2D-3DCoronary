@@ -1,4 +1,12 @@
 # Topology and Occlusion-Aware Rigid Registration for 2D/3D Coronary Arteries Alignment: Overcoming Branch Missing and Vessel Overlap
+This repository implements a deep learning-based method for rigid DSA-CTA registration in cardiac navigation. The approach integrates a vascular-topology-aware framework with transformer-based techniques to improve vascular registration.
+
+### Key Features:
+- **Vascular Structure Matching**: Novel framework for 2D DSA and 3D CTA rigid registration, addressing vessel overlap and missing branches.
+- **Realistic Data Generation**: Simulation strategy to generate datasets that replicate real-world challenges, such as branch missing and vessel overlap.
+- **Comprehensive Datasets**: Utilizes both large clinical and simulated datasets for training and evaluation.
+
+The method demonstrates effectiveness and robustness on both simulated and real-world datasets.
 
 ## TODO List
 ### 1. Inference  
