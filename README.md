@@ -1,7 +1,6 @@
 # Topology and Occlusion-Aware Rigid Registration for 2D/3D Coronary Arteries Alignment: Overcoming Branch Missing and Vessel Overlap
 
 ## TODO List
-
 ### 1. Inference  
 - [ ] Open-source inference model weights  
 - [ ] Release example inference script and test data
