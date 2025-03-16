@@ -28,3 +28,15 @@ The method demonstrates effectiveness and robustness on both simulated and real-
 - [ ] Open-source training code  
 
 > **News**: Our paper **"Vascular-topology-aware Deep Structure Matching for 2D DSA and 3D CTA Rigid Registration"** has been accepted to the **2025 International Conference on Information Processing in Medical Imaging (IPMI)**! 
+
+
+## Citation & Acknowledgment
+
+If you find this work helpful, please consider giving this repository a star ⭐ and citing our paper:
+
+**Citation**:
+```
+Xiong, X., et al. (2025). Vascular-topology-aware Deep Structure Matching for 2D DSA and 3D CTA Rigid Registration. 
+*Proceedings of the 2025 International Conference on Information Processing in Medical Imaging (IPMI)*.
+
+```
