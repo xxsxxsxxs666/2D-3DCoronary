@@ -33,10 +33,18 @@ The method demonstrates effectiveness and robustness on both simulated and real-
 ## Citation & Acknowledgment
 
 If you find this work helpful, please consider giving this repository a star ⭐ and citing our paper:
-
-**Citation**:
+### Citation
 ```
 Xiong, X., et al. (2025). Vascular-topology-aware Deep Structure Matching for 2D DSA and 3D CTA Rigid Registration. 
 *Proceedings of the 2025 International Conference on Information Processing in Medical Imaging (IPMI)*.
 
 ```
+
+### Acknowledgment
+This work was conducted at **United Imaging Intelligence (联影智能)** and **ShanghaiTech University (上海科技大学)**.  
+We sincerely appreciate their support.
+
+<p align="center">
+  <img src="assets/logo_uii.png" alt="United Imaging Intelligence Logo" height="80">
+  <img src="assets/shanghaitech.png" alt="ShanghaiTech University Logo" height="80">
+</p>
