@@ -13,10 +13,25 @@ The method demonstrates effectiveness and robustness on both simulated and real-
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
 ![GitHub Stars](https://img.shields.io/github/stars/xxsxxsxxs666/2D-3DCoronary?style=social)
+
+## Inference
+### Simulated Dataset
+For inference on simulated datasets, we provide an example script that demonstrates how to use the trained model. The script can be found in the `glue-factory\pipeline_simulating_func.py` file.
+To run the inference on simulated datasets, simply execute the following command:
+```bash
+python glue-factory/pipeline_simulating_func.py \
+    --config_path config/glue-factory/config_simulating.yaml \
+    --checkpoint_path path/to/your/checkpoint.pth \
+    --output_dir path/to/output/directory
+```
+### Real-world Dataset
+Coming soon! Stay tuned for updates.
+
 ## TODO List
 ### 1. Inference  
 - [x] Open-source inference model weights  
-- [ ] Release example inference script and test data
+- [x] Release example inference script on simulated datasets
+- [ ] Release example inference script on real-world datasets
 ### 2. Data  
 - [ ] Open-source partial simulation data  
 - [ ] Open-source partial real-world data (considering data privacy)  
