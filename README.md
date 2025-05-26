@@ -104,3 +104,12 @@ We sincerely appreciate their support.
 </p>
 
 This project is partially built upon the [**Glue Factory**](https://github.com/cvg/glue-factory) framework developed by the Computer Vision Group (CVG). 
+
+
+## License & Commercial Use
+
+This repository is released for academic and research purposes only.  
+All code and data are the property of United Imaging Intelligence (联影智能).  
+Commercial use is **strictly prohibited** without prior written permission.
+
+For commercial licensing or partnership inquiries, please contact: yanl@united-imaging.com
