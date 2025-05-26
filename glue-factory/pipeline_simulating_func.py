@@ -195,11 +195,16 @@ def case_evaluation(cta_3d_points, radius, target_params, grid_params, cut_index
 
 
 if __name__ == "__main__":
-    data_dir = Path("/mnt/maui/CTA_Coronary/project/xiongxs/CTA_DSA/90_occlude_L")
-    conf_path = Path("gluefactory/configs/superpoint+lightglue_homography_vessel_online_cut_sample.yaml")
-    weight_path = "online_cut_sample_single0_lax1_rigid_41_continue_2"
-    checkpoint_path = Path(f"/mnt/maui/CTA_Coronary/project/xiongxs/glue_factory/outputs/training/"
-                           f"{weight_path}/checkpoint_best.tar")
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Run case evaluation")
+    parser.add_argument("--data_dir", type=str, default="", help="Directory containing the data files")
+    parser.add_argument("--conf_path", type=str, default="", help="Path to the configuration file")
+    parser.add_argument("--checkpoint_path", type=str, default="", help="Path to the model checkpoint")
+    args = parser.parse_args()
+    data_dir = args.data_dir
+    conf_path = args.conf_path
+    checkpoint_path = args.checkpoint_path
     data_list = data_dir.glob("*/*.npz")
     cuda_id = 3
     conf = OmegaConf.load(conf_path)
