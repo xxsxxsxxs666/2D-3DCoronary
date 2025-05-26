@@ -84,9 +84,14 @@ We are currently working on extending our framework to support non-rigid registr
 If you find this work helpful, please consider giving this repository a star ⭐ and citing our paper:
 ### Citation
 ```
-Xiong, X., et al. (2025). Vascular-topology-aware Deep Structure Matching for 2D DSA and 3D CTA Rigid Registration. 
-*Proceedings of the 2025 International Conference on Information Processing in Medical Imaging (IPMI)*.
-
+@INPROCEEDINGS{Xiong2025IPMI,
+  author       = {Xiong, Xiaosong and Jiang, Caiwen and Wu, Peng and Zhang, Xiao and Song, Yanli and Zhang, Xinyi and Tao, Ze and Wu, Dijia and Shen, Dinggang},
+  author+an    = {1=highlight},
+  title        = {Vascular-topology-aware Deep Structure Matching for 2D DSA and 3D CTA Rigid Registration},
+  booktitle    = {Information Processing in Medical Imaging (IPMI)},
+  year         = {2025},
+  note         = {To appear}
+}
 ```
 
 ### Acknowledgment
