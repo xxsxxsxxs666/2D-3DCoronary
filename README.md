@@ -102,3 +102,5 @@ We sincerely appreciate their support.
   <img src="assets/logo_uii.png" alt="United Imaging Intelligence Logo" height="80">
   <img src="assets/shanghaitech.png" alt="ShanghaiTech University Logo" height="80">
 </p>
+
+This project is partially built upon the [**Glue Factory**](https://github.com/cvg/glue-factory) framework developed by the Computer Vision Group (CVG). 
