@@ -1,0 +1,56 @@
+{
+    "LightGlue": {
+        "size": 104443,
+        "sub": {
+            "benchmark.py": {
+                "size": 8953,
+                "sub": null
+            },
+            "demo.py": {
+                "size": 1552,
+                "sub": null
+            },
+            "lightglue": {
+                "size": 84307,
+                "sub": {
+                    "aliked.py": {
+                        "size": 26762,
+                        "sub": null
+                    },
+                    "disk.py": {
+                        "size": 1750,
+                        "sub": null
+                    },
+                    "dog_hardnet.py": {
+                        "size": 1499,
+                        "sub": null
+                    },
+                    "lightglue.py": {
+                        "size": 26093,
+                        "sub": null
+                    },
+                    "sift.py": {
+                        "size": 8193,
+                        "sub": null
+                    },
+                    "superpoint.py": {
+                        "size": 8617,
+                        "sub": null
+                    },
+                    "utils.py": {
+                        "size": 5509,
+                        "sub": null
+                    },
+                    "viz2d.py": {
+                        "size": 5884,
+                        "sub": null
+                    }
+                }
+            },
+            "README.md": {
+                "size": 9631,
+                "sub": null
+            }
+        }
+    }
+}

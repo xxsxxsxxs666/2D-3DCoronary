@@ -1,0 +1,45 @@
+data:
+    name: vessel_centerline_point_online_cut_sample
+    data_dir: /mnt/maui/AI_Station/CTA_Coronary/project/xiongxs/CTA_DSA
+    train_path: 61_train_lightglue_L
+    val_path: 61_val_lightglue_L
+    train_size: 10000
+    val_size: 200
+    batch_size: 32
+    num_workers: 16
+    using_existing_list: True
+    existing_list_path: /mnt/maui/AI_Station/CTA_Coronary/project/xiongxs/CTA_DSA/61_train_list
+
+model:
+    name: vessel_pipeline
+    extractor:
+        name: gluefactory_nonfree.superpoint
+        trainable: False
+        sparse_outputs: False
+        weights: /home/xiaosong/Intern_project/CTA2DSA/lightglue/LightGlue/pretrained_weight/superpoint_v1.pth
+    matcher:
+        name: matchers.lightglue
+        filter_threshold: 0.1
+        flash: false
+        checkpointed: true
+        weights: /home/xiaosong/Intern_project/CTA2DSA/lightglue/LightGlue/pretrained_weight/superpoint_lightglue.pth
+        lax: true # calculate LAX metrics, using lax inference for lightglue
+        lax_distance_threshold: 2.0
+
+train:
+    seed: 0
+    epochs: 40
+    log_every_iter: 100
+    eval_every_iter: 500
+    lr: 1e-4
+    lr_schedule:
+        start: 20
+        type: exp
+        on_epoch: true
+        exp_div_10: 10
+    plot: [5, 'gluefactory.visualization.visualize_batch_lax.make_match_figures_dict']
+benchmarks:
+    hpatches:
+      eval:
+        estimator: opencv
+        ransac_th: 0.5
