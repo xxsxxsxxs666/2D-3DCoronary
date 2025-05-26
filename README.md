@@ -15,17 +15,17 @@ The method demonstrates effectiveness and robustness on both simulated and real-
 ![GitHub Stars](https://img.shields.io/github/stars/xxsxxsxxs666/2D-3DCoronary?style=social)
 ## TODO List
 ### 1. Inference  
-- [ ] Open-source inference model weights  
+- [x] Open-source inference model weights  
 - [ ] Release example inference script and test data
 ### 2. Data  
 - [ ] Open-source partial simulation data  
 - [ ] Open-source partial real-world data (considering data privacy)  
 ### 3. Simulation Module  
-- [ ] Organize and release simulation code  
+- [x] Organize and release simulation code  
 - [ ] Provide example simulation data  
 - [ ] Write usage documentation for the simulation module  
 ### 4. Training  
-- [ ] Open-source training code  
+- [x] Open-source training code  
 
 > **News**: Our paper **"Vascular-topology-aware Deep Structure Matching for 2D DSA and 3D CTA Rigid Registration"** has been accepted to the **2025 International Conference on Information Processing in Medical Imaging (IPMI)**! 
 
