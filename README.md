@@ -25,7 +25,36 @@ python glue-factory/pipeline_simulating_func.py \
     --output_dir path/to/output/directory
 ```
 ### Real-world Dataset
-Coming soon! Stay tuned for updates.
+To run inference on real-world datasets, we provide an example script that demonstrates how to use the trained model. The script can be found in the `glue-factory\pipeline_real_func.py` file.
+To run the inference on real-world datasets, simply execute the following command:
+```bash
+python glue-factory/pipeline_real_func.py \
+    --config_path config/glue-factory/config_real.yaml \
+    --checkpoint_path path/to/your/checkpoint.pth \
+    --output_dir path/to/output/directory \
+    --save_path path/to/save/results
+```
+
+## Data
+### Simulated Dataset
+Coming soon! We will provide a simulated dataset that replicates the challenges of real-world DSA-CTA registration, including vessel overlap and missing branches.
+### Real-world Dataset
+Coming soon!
+
+## Simulation Module
+The simulation module is designed to generate synthetic datasets that mimic the challenges of real-world DSA-CTA registration. It includes functions for simulating vessel overlap and missing branches, which are crucial for training robust models.
+The module can be found in class `VesselTree` of the file `glue-factory\gluefactory\utils\vessel_tool.py`. Class `VesselDataset` in `\glue-factory\gluefactory\datasets\vessel_centerline_point_online_cut_sample.py` use this module to generate synthetic datasets.
+### visualizing the simulated process
+You can visualize the simulated process by running the following command:
+```bash
+python glue-factory/check_random_cut.py
+```
+
+## Training
+Coming soon!
+
+## Non-rigid Registration
+We are currently working on extending our framework to support non-rigid registration. This will involve developing a non-rigid simulation module, training code, and inference scripts. Stay tuned for updates!
 
 ## TODO List
 ### 1. Inference  
@@ -41,6 +70,11 @@ Coming soon! Stay tuned for updates.
 - [ ] Write usage documentation for the simulation module  
 ### 4. Training  
 - [x] Open-source training code  
+
+### 5. Non-rigid Registration  
+- [ ] Non-rigid simulation module
+- [ ] Non-rigid training code
+- [ ] Non-rigid inference script
 
 > **News**: Our paper **"Vascular-topology-aware Deep Structure Matching for 2D DSA and 3D CTA Rigid Registration"** has been accepted to the **2025 International Conference on Information Processing in Medical Imaging (IPMI)**! 
 
