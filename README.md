@@ -31,13 +31,13 @@ Coming soon! Stay tuned for updates.
 ### 1. Inference  
 - [x] Open-source inference model weights  
 - [x] Release example inference script on simulated datasets
-- [ ] Release example inference script on real-world datasets
+- [x] Release example inference script on real-world datasets
 ### 2. Data  
 - [ ] Open-source partial simulation data  
 - [ ] Open-source partial real-world data (considering data privacy)  
 ### 3. Simulation Module  
 - [x] Organize and release simulation code  
-- [ ] Provide example simulation data  
+- [x] Provide example simulation data  
 - [ ] Write usage documentation for the simulation module  
 ### 4. Training  
 - [x] Open-source training code  
