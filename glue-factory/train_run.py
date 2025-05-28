@@ -635,7 +635,7 @@ def main_worker(rank, conf, output_dir, args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--experiment", type=str, default="Simulate_vessel_debug")
-    parser.add_argument("--conf", type=str, default="gluefactory/configs/superpoint+lightglue_homography_vessel_offline_cut_45.yaml")
+    parser.add_argument("--conf", type=str, default="gluefactory/configs/vessel_offline_cut_45.yaml")
     parser.add_argument(
         "--mixed_precision",
         "--mp",

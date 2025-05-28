@@ -1,0 +1,51 @@
+data:
+  name: vessel_centerline_point_online_cut_non_rigid  # vessel_centerline_point_online_cut_non_rigid / vessel_centerline_point_offline_cut_asymmetric
+  data_dir: path/to/your/data_directory
+  train_path: directory_name_for_training_data
+  val_path: directory_name_for_validation_data
+  train_size: 10000
+  val_size: 20
+  batch_size: 2
+  num_workers: 1
+  use_existing_list: true
+  existing_list_path: path/to/your/existing_list # decide which data to use
+
+model:
+  name: vessel_pipeline
+  extractor:
+    name: gluefactory_nonfree.superpoint
+    trainable: false
+    sparse_outputs: false
+    weights: /home/xiaosong_xiong/Intern_project/CTA2DSA/lightglue/LightGlue/pretrained_weight/superpoint_v1.pth
+  matcher:
+    name: matchers.lightglue_vessel_v1
+    use_label: false
+    use_seq: false
+    use_3d: true
+    gamma_3d: 10
+    s_2_a: true
+    transformers_type: asymmetric
+    filter_threshold: 0.1
+    flash: false
+    checkpointed: true
+    weights: path/to/your/pretrained.pth
+    lax: true  # calculate LAX metrics, using lax inference for lightglue
+    lax_distance_threshold: 2.0
+
+train:
+    seed: 0
+    epochs: 40
+    log_every_iter: 100
+    eval_every_iter: 500
+    lr: 5e-5
+    lr_schedule:
+        start: 20
+        type: exp
+        on_epoch: true
+        exp_div_10: 10
+    plot: [5, 'gluefactory.visualization.visualize_batch_lax.make_match_figures_dict']
+benchmarks:
+    hpatches:
+      eval:
+        estimator: opencv
+        ransac_th: 0.5
