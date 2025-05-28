@@ -659,7 +659,7 @@ if __name__ == "__main__":
     parser.add_argument("--no_eval_0", action="store_true")
     parser.add_argument("--run_benchmarks", action="store_true")
     parser.add_argument("--dotlist", nargs="*")
-    parser.add_argument("--single_gpu_id", type=int, default=3)
+    parser.add_argument("--single_gpu_id", type=int, default=0)
     args = parser.parse_intermixed_args()
 
     logger.info(f"Starting experiment {args.experiment}")

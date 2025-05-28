@@ -81,8 +81,7 @@ def convert_dict_to_name(d):
 
 
 if __name__ == "__main__":
-    conf_path = Path(
-        "../../../glue-factory/gluefactory/configs/superpoint+lightglue_homography_vessel_offline_cut_45.yaml")
+    conf_path = Path("path/to/your/config.yaml")
     conf = OmegaConf.load(conf_path)
     dataset = get_dataset(conf.data.name)(conf.data)
     val_dataset = dataset.get_dataset("train")

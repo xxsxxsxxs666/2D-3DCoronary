@@ -92,8 +92,8 @@ def plot_cumulated_curve(data, show_text=False, color="k", legend_name="mse"):
 if __name__ == "__main__":
     # 用法示例
     from pathlib import Path
-    save_path = Path("/home/xiaosong_xiong/Intern_project/CTA2DSA//script/结果统计/2024_9_25")
-    data_path = "/mnt/maui/CTA_Coronary/project/xiongxs/CTA_DSA/real_pipeline/online_cut_sample_single0_lax1_rigid_41_continue_2/f_0.01_w_-1_d_-1_seg_True_new/results.xlsx"
+    save_path = Path("path/to/save/plots")
+    data_path = Path("path/to/your/infer_results.xlsx")
 
 
     data = pd.read_excel(data_path)
