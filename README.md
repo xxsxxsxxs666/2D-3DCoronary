@@ -49,9 +49,9 @@ You can visualize the simulated process by running the following command:
 ```bash
 python glue-factory/check_random_cut.py
 ```
-
+You need to modify the `config_path` in the `glue-factory/check_random_cut.py` file to your own path.
 ## Training
-Coming soon!
+Coming soon! 
 
 ## Non-rigid Registration
 We are currently working on extending our framework to support non-rigid registration. This will involve developing a non-rigid simulation module, training code, and inference scripts. Stay tuned for updates!
