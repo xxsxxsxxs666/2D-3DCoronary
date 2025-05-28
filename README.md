@@ -79,10 +79,9 @@ We are currently working on extending our framework to support non-rigid registr
 > **News**: Our paper **"Vascular-topology-aware Deep Structure Matching for 2D DSA and 3D CTA Rigid Registration"** has been accepted to the **2025 International Conference on Information Processing in Medical Imaging (IPMI)**! 
 
 
-## Citation & Acknowledgment
+## Citation
 
 If you find this work helpful, please consider giving this repository a star ⭐ and citing our paper:
-### Citation
 ```
 @INPROCEEDINGS{Xiong2025IPMI,
   author       = {Xiong, Xiaosong and Jiang, Caiwen and Wu, Peng and Zhang, Xiao and Song, Yanli and Zhang, Xinyi and Tao, Ze and Wu, Dijia and Shen, Dinggang},
@@ -112,4 +111,4 @@ This repository is released for academic and research purposes only.
 All code and data are the property of United Imaging Intelligence (联影智能).  
 Commercial use is **strictly prohibited** without prior written permission.
 
-For commercial licensing or partnership inquiries, please contact: yanl@united-imaging.com
+For commercial licensing or partnership inquiries, please contact: yanli.song@uii-ai.com
