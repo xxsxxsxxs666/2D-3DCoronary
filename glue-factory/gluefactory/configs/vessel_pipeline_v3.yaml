@@ -3,7 +3,6 @@ data:
   data_dir: path/to/your/data_directory
   train_path: directory_name_for_training_data
   val_path: directory_name_for_validation_data
-  train_size: 10000
   val_size: 20
   batch_size: 2
   num_workers: 1
